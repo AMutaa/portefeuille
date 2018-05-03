@@ -6,6 +6,7 @@
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <title>Index</title>
  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
 
 <body>
@@ -14,11 +15,28 @@
  </div>
 
  <div class="nav">
-  <ul>
-   <li>info</li>
-   <li>work</li>
-   <li>contact</li>
-  </ul>
+
+  <li>info</li>
+  <li>work</li>
+  <li>contact</li>
+
+ </div>
+
+ <div class="container">
+  <div class="item _1">1</div>
+  <div class="item _2">2</div>
+  <div class="item _3">3</div>
+  <div class="item _4">4</div>
+  <div class="item _5">5</div>
+  <div class="item _6">6</div>
+  <div class="item _7">7</div>
+  <div class="item _8">8</div>
+  <div class="item _9">9</div>
+
+
+
+
+
  </div>
 
 
@@ -26,6 +44,8 @@
   body {
    margin: 20px auto;
    background: #FFFFF4;
+   font-family: 'Dosis', sans-serif;
+
 
   }
 
@@ -44,6 +64,42 @@
    border: 2px solid bisque;
    border-radius: 30%;
 
+  }
+
+
+
+  .nav {
+   width: 50%;
+   margin: 50px auto;
+   padding: 20px 100px;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   border-top: 1px solid black;
+   border-bottom: 1px solid black;
+
+
+  }
+
+  li {
+   list-style-type: none;
+   font-size: 25px;
+   margin: 0 50px;
+
+  }
+
+  .container {
+   margin: 0 auto;
+   height: 100vh;
+   width: 60%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: repeat(4, 1fr);
+   grid-gap: 10px;
+  }
+
+  .item {
+   background: burlywood;
   }
  </style>
 </body>
