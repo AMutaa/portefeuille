@@ -15,6 +15,7 @@
   <div class="wrapper">
     <div class=" header box">
       <div class="navigation">
+        <img class="head_img" src="images/avatar.jpeg" width="50px" height="50px">
         <a class="nav" href="#about">About</a>
         <a class="nav" href="#work">Work</a>
         <a class="nav" href="#contact">Contact</a>
@@ -36,8 +37,9 @@
           id non inventore aperiam, minima, itaque doloremque vel veritatis illo quidem expedita odio? Blanditiis. Lorem
           ipsum dolor sit amet consectetur. </p>
 
-        <p> Currently open to any exciting freelance and collaborative opportunities, I am willing for new challenges, new positions
-          as well as looking for opportunities to work in different foreign countries to see the other side of the world.</p>
+        <p> Currently open to any exciting freelance and collaborative opportunities, Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Labore ipsam architecto ducimus, nesciunt eveniet amet, nemo dolorem, cum doloremque laborum
+          ratione aliquid? Ex corporis laborum sit architecto incidunt voluptatibus officia.</p>
       </div>
       <div class="skills">
         <h2>What I do</h2>
@@ -61,6 +63,7 @@
       <a name="contact"></a>
 
       <div class="details">
+        <img src="images/avatar.jpeg" alt="" width="150px" height="150px">
         <h2>Contact Me</h2>
         <ul>
           <li>Phone: +1-000-0000000</li>
@@ -68,7 +71,7 @@
         </ul>
 
         <h3>Check out more projects on
-          <a href="https://github.com/AMutaa">Github</a>
+          <a class="git" href="https://github.com/AMutaa">Github</a>
         </h3>
       </div>
 
@@ -114,10 +117,8 @@
   }
 
   .navigation {
-    display: flex;
     grid-column: span 3;
     grid-row: 1/2;
-    justify-content: flex-end;
     margin: 0 30px;
   }
 
@@ -126,6 +127,7 @@
     margin: 10px;
     text-decoration: none;
     color: rgb(180, 174, 106);
+    float: right;
 
   }
 
@@ -138,6 +140,10 @@
   h1 {
 
     font-size: 4em;
+  }
+
+  .head_img {
+    float: left;
   }
 
   /* About Styles */
@@ -219,6 +225,19 @@
   }
 
   /* Contact Styles */
+
+  img {
+    float: left;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .git {
+    color: rgb(180, 174, 106);
+    font-size: 25px;
+  }
 
   .contact {
     display: grid;
