@@ -26,16 +26,24 @@
       </div>
     </div>
     <div class=" about box">
-      <h2>About Me</h2>
-      <p>I am Adam Mulorem (just call me Adam), Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem eum iste sequi
-        animi sit facilis commodi dolores, deleniti nihil. Voluptates, ipsum accusamus? Id error eius.</p>
+      <div class="me">
+        <h2>About Me</h2>
+        <p>I am Adam Mulorem (just call me Adam), Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem eum iste
+          sequi animi sit facilis commodi dolores, deleniti nihil. Voluptates, ipsum accusamus? Id error eius.</p>
 
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi suscipit unde ut assumenda asperiores, ipsa
-        id non inventore aperiam, minima, itaque doloremque vel veritatis illo quidem expedita odio? Blanditiis. Lorem ipsum
-        dolor sit amet consectetur. </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente animi suscipit unde ut assumenda asperiores, ipsa
+          id non inventore aperiam, minima, itaque doloremque vel veritatis illo quidem expedita odio? Blanditiis. Lorem
+          ipsum dolor sit amet consectetur. </p>
 
-      <p> Currently open to any exciting freelance and collaborative opportunities, I am willing for new challenges, new positions
-        as well as looking for opportunities to work in different foreign countries to see the other side of the world.</p>
+        <p> Currently open to any exciting freelance and collaborative opportunities, I am willing for new challenges, new positions
+          as well as looking for opportunities to work in different foreign countries to see the other side of the world.</p>
+      </div>
+      <div class="skills">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum possimus, ullam distinctio aspernatur autem
+          iste obcaecati expedita incidunt ipsum quod ea. Ratione sunt reiciendis illum nobis magnam est enim.
+        </p>
+      </div>
     </div>
     <div class=" about box"></div>
     <div class=" contact box"></div>
@@ -96,6 +104,21 @@
   h1 {
 
     font-size: 4em;
+  }
+
+  /* About Styles */
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+  }
+
+  .me {
+    grid-column: 1/2;
+  }
+
+  .skills {
+    grid-column: 2/-1;
   }
 </style>
 
