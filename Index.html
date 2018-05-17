@@ -24,9 +24,11 @@
         <a class="nav" href="#contact">Contact</a>
       </div>
       <div class="intro">
+
         <h1>Hi,
           <br>I'm Adam,
           <br>Web Developer.</h1>
+
       </div>
     </div>
     <div class=" about box">
@@ -83,7 +85,7 @@
       </div>
 
       <div class="quote">
-        <h2>"The Illiterates of today are the ones who unlearn what they've learned"</h2>
+        <h2 class="quo">"The Illiterates of today are the ones who unlearn what they've learned"</h2>
       </div>
 
       <div class="credits">
@@ -146,6 +148,7 @@
   .intro {
     grid-column: span 3;
     grid-row: 3/4;
+    background-image: url(https://images.pexels.com/photos/37727/pexels-photo-37727.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
   }
 
   h1 {
@@ -155,6 +158,10 @@
 
   .head_img {
     float: left;
+  }
+
+  .ban {
+    float: right;
   }
 
   /* About Styles */
@@ -240,6 +247,7 @@
     float: left;
   }
 
+
   li {
     list-style-type: none;
   }
@@ -265,12 +273,17 @@
   .quote {
     grid-column: 2/-1;
     grid-row: 1/2;
+    display: grid;
+    text-align: center;
+    vertical-align: middle;
   }
 
   .credits {
     grid-column: span 2;
     text-align: center;
   }
+
+  .quo {}
 </style>
 
 </html>
