@@ -7,6 +7,7 @@
   <title>Project Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
 </head>
@@ -16,12 +17,13 @@
 
     <div class="nav">
       <img class="head_img" src="images/avatar.jpeg" width="50px" height="50px">
-      <p href="/portefeuille/Index.html">
-        <i class="fas fa-arrow-circle-left">Back</i>
-      </p>
+      <a href="/portefeuille/Index.html">Back</a>
     </div>
     <div class=" item content"></div>
-    <div class=" item credits"></div>
+    <div class=" item credits">
+      <i class="far fa-copyright fa-spin"></i>Designed By Adam 2018</div>
+
+  </div>
   </div>
 
 </body>
@@ -39,7 +41,7 @@
   }
 
   .container1 {
-    width: 80vw;
+    width: 70vw;
     margin: 0 auto;
     display: grid;
     grid-template-rows: 50px 950px 50px;
@@ -47,10 +49,14 @@
   }
 
   .nav {
+    width: 70vw;
     grid-row: 1/2;
     display: grid;
     text-align: center;
     display: flex;
+    padding-right: 50px;
+    position: fixed;
+    overflow: hidden;
 
   }
 
@@ -72,17 +78,26 @@
 
   }
 
-  p {
+  a {
     height: 30px;
     margin: 10px auto;
     font-size: 25px;
-    justify-self: center;
+    color: rgb(180, 174, 106);
+    letter-spacing: 2px;
+    text-decoration: none;
 
   }
 
   i {
     color: rgb(180, 174, 106);
+    font-family: 'Quicksand', sans-serif;
+  }
 
+  /* credit styles */
+
+  .credits {
+    text-align: center;
+    padding: 10px 0 10px 0;
   }
 </style>
 
