@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Project Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container1">
+
+    <div class=" item nav">
+      <img class="head_img" src="images/avatar.jpeg" width="50px" height="50px">
+      <a href="/portefeuille/Index.html">
+        <i class="fas fa-arrow-circle-left">Back</i>
+      </a>
+    </div>
+    <div class=" item content"></div>
+    <div class=" item credits"></div>
+  </div>
+
+</body>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(180, 174, 106);
+    background-color: black;
+
+  }
+
+  .container1 {
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 50px 950px 50px;
+    grid-gap: 10px;
+  }
+
+  .nav {
+    grid-row: 1/2;
+    display: grid;
+
+  }
+
+  .content {
+    grid-row: 2/3;
+  }
+
+  .credits {
+    grid-row: 3/-1;
+  }
+
+  .item {
+    border: 3px solid red;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  i {
+    color: rgb(180, 174, 106);
+
+  }
+</style>
+
+</html>
