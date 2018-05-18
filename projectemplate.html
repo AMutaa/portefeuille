@@ -14,11 +14,11 @@
 <body>
   <div class="container1">
 
-    <div class=" item nav">
+    <div class="nav">
       <img class="head_img" src="images/avatar.jpeg" width="50px" height="50px">
-      <a href="/portefeuille/Index.html">
+      <p href="/portefeuille/Index.html">
         <i class="fas fa-arrow-circle-left">Back</i>
-      </a>
+      </p>
     </div>
     <div class=" item content"></div>
     <div class=" item credits"></div>
@@ -49,6 +49,8 @@
   .nav {
     grid-row: 1/2;
     display: grid;
+    text-align: center;
+    display: flex;
 
   }
 
@@ -64,8 +66,18 @@
     border: 3px solid red;
   }
 
-  a {
-    text-align: center;
+  .head_img {
+    float: left;
+    margin: 5px 0;
+
+  }
+
+  p {
+    height: 30px;
+    margin: 10px auto;
+    font-size: 25px;
+    justify-self: center;
+
   }
 
   i {
