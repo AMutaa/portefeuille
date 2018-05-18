@@ -19,14 +19,20 @@
       <img class="head_img" src="images/avatar.jpeg" width="50px" height="50px">
       <a href="/portefeuille/Index.html">Back</a>
     </div>
-    <div class=" item content"></div>
-    <div class=" item credits">
+    <div class="content">
+      <div class=" item foreword"></div>
+      <div class=" item mobile"></div>
+      <div class=" item desktop"></div>
+      <div class=" item tablet"></div>
+    </div>
+    <div class="credits">
       <i class="far fa-copyright fa-spin"></i>Designed By Adam 2018</div>
 
   </div>
   </div>
 
 </body>
+<!-- Major Styles -->
 
 <style>
   * {
@@ -41,15 +47,17 @@
   }
 
   .container1 {
-    width: 70vw;
+    width: 60vw;
     margin: 0 auto;
     display: grid;
-    grid-template-rows: 50px 950px 50px;
+    grid-template-rows: 50px auto 50px;
     grid-gap: 10px;
   }
 
+  /* Nav Styles */
+
   .nav {
-    width: 70vw;
+    width: 60vw;
     grid-row: 1/2;
     display: grid;
     text-align: center;
@@ -57,6 +65,8 @@
     padding-right: 50px;
     position: fixed;
     overflow: hidden;
+    background-color: black;
+    opacity: 0.8;
 
   }
 
@@ -69,7 +79,7 @@
   }
 
   .item {
-    border: 3px solid red;
+    background-color: seashell;
   }
 
   .head_img {
@@ -88,10 +98,36 @@
 
   }
 
-  i {
-    color: rgb(180, 174, 106);
-    font-family: 'Quicksand', sans-serif;
+  /* Project Styles */
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 450px 640px 500px;
+    grid-gap: 20px;
   }
+
+  .foreword {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .mobile {
+    grid-column: 2/-1;
+    grid-row: 1/2;
+  }
+
+  .desktop {
+    grid-column: 1/-1;
+    grid: 2/3;
+  }
+
+  .tablet {
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+
+  }
+
 
   /* credit styles */
 
