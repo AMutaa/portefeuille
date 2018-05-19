@@ -212,8 +212,4 @@ li {
 
 /* Mobile styles */
 
-@media screen and (max-width: 600px) {
- body {
-  background-color: brown;
- }
-}
+@media screen and (max-width: 600px) {}
