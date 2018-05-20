@@ -275,24 +275,6 @@ li {
     grid-gap: 10px;
   }
 
-  .articles {
-    grid-column: 1/2;
-  }
-
-  a {
-    text-decoration: none;
-    color: rgb(180, 174, 106);
-  }
-
-  .authors {
-    color: whitesmoke;
-    margin-top: 0;
-  }
-
-  .music {
-    grid-column: 2/-1;
-  }
-
   /* Contact Styles */
 
   img {
