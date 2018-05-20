@@ -270,11 +270,9 @@ li {
   /* Blog Styles */
 
   .blog {
-    margin: 0 auto;
-    width: 70%;
-    display: grid;
+    width: 97%;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
+    grid-gap: 10px;
   }
 
   .articles {
