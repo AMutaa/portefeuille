@@ -211,7 +211,7 @@ li {
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    grid-template-rows: 650px 500px 950px 500px 300px;
+    grid-template-rows: 650px 450px 750px 500px 300px;
     grid-gap: 30px;
     width: 97vw;
   }
@@ -252,10 +252,9 @@ li {
   /* Project styles */
 
   .work {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
   }
 
   .trex {
