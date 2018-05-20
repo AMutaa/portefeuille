@@ -213,8 +213,8 @@ li {
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    grid-template-rows: 650px 450px 750px 500px 300px;
-    grid-gap: 30px;
+    grid-template-rows: 650px 450px 750px 500px 460px;
+    grid-gap: 50px;
     width: 97vw;
   }
 
@@ -278,46 +278,23 @@ li {
   /* Contact Styles */
 
   img {
-    float: left;
-  }
-
-  li {
-    list-style-type: none;
+    width: 100px;
+    height: 100px;
   }
 
   .git {
-    color: rgb(180, 174, 106);
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 200px 10px;
-    grid-gap: 10px;
-    margin: 50px 0;
-  }
-
-  .details {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-
-  .quote {
-    grid-column: 2/-1;
-    grid-row: 1/2;
-    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: 150px 10px;
+    margin: 0;
     text-align: center;
   }
 
   .quo {
-    margin: 0;
-    padding: 80px 0;
-  }
-
-  .credits {
-    grid-column: span 2;
-    text-align: center;
+    padding: 40px 0;
   }
 }
 
