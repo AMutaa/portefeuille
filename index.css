@@ -213,7 +213,7 @@ li {
 
 @media screen and (max-width: 1024px) {
   .wrapper {
-    grid-template-rows: 650px 450px 750px 500px 460px;
+    grid-template-rows: 650px 450px 750px 500px 200px;
     grid-gap: 50px;
     width: 97vw;
   }
